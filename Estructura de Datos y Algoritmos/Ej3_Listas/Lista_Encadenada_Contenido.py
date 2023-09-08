@@ -126,23 +126,6 @@ class Lista_Encadenada:
             #else:
             #    print(f'El elemento siguiente se encuentra en la posición: {i+1} y el dato es: {siguiente.getnodo()}')
 
-    # def ordenar(self):
-    #     aux = self.__cabeza
-    #     siguiente = aux.getsiguiente()
-    #     while siguiente != None:
-    #         while siguiente != None:
-    #             if aux.getnodo() > siguiente.getnodo():
-    #                 temp = aux.getnodo()
-    #                 aux.setnodo(siguiente.getnodo())
-    #                 siguiente.setnodo(temp)
-    #             elif aux.getnodo() < siguiente.getnodo():
-    #                 siguiente = siguiente.getsiguiente()
-    #             aux = aux.getsiguiente()
-    #             siguiente = aux.getsiguiente()
-    #         aux = aux.getsiguiente()
-    #         siguiente = siguiente.getsiguiente()
-
-
     def ordenar(self):
         if self.vacio():
             return  # La lista está vacía, no hay nada que ordenar
@@ -157,22 +140,5 @@ class Lista_Encadenada:
                     siguiente.setnodo(temp)
                 siguiente = siguiente.getsiguiente()
             actual = actual.getsiguiente()
-
-
-            
-
-
-# if __name__ == '__main__':
-#     a = Lista_Encadenada()
-#     a.insertar(1)
-#     a.insertar(2)
-#     a.insertar(3)
-#     print('\n')
-#     a.mostrar()
-#     print(' ')
-#     a.anterior(3)
-#     a.siguiente(2)
-#     a.suprimir(3)
-#     a.mostrar()
 
     
